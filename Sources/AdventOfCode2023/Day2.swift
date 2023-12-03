@@ -8,7 +8,7 @@
 import AdventOfCodeCore
 
 public class Day2: AOCDay {
-    public let puzzleInput: String?
+    public let puzzleInput: String? 
     
     public init(puzzleInput input: String?) {
         puzzleInput = input ?? ""

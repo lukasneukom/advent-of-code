@@ -24,4 +24,24 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
 """).solvePart1()
         XCTAssertEqual(d, "8")
     }
+    
+    func testDay3() throws {
+        let input = """
+467..114..
+...*......
+..35..633.
+......#...
+617*......
+.....+.58.
+..592.....
+......755.
+...$.*....
+.664.598..
+"""
+        let day = Day3(puzzleInput: input)
+        let d = day.solvePart1()
+        let e = day.solvePart2()
+        XCTAssertEqual(d, "4361")
+        XCTAssertEqual(e, "467835")
+    }
 }
