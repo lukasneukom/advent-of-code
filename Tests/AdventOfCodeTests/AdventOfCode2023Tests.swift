@@ -45,7 +45,7 @@ Game 5: 6 red, 1 blue, 3 green; 2 blue, 1 red, 2 green
         XCTAssertEqual(e, "467835")
     }
     
-    func testDay() throws {
+    func testDay4() throws {
         let input = """
 Card 1: 41 48 83 86 17 | 83 86  6 31 17  9 48 53
 Card 2: 13 32 20 16 61 | 61 30 68 82 17 32 24 19
@@ -56,5 +56,54 @@ Card 6: 31 18 13 56 72 | 74 77 10 23 35 67 36 11
 """
         let d = Day4(puzzleInput: input).solvePart1()
         XCTAssertEqual(d, "13")
+    }
+    
+    func testDay5() throws {
+        let input = """
+seeds: 79 14 55 13
+
+seed-to-soil map:
+50 98 2
+52 50 48
+
+soil-to-fertilizer map:
+0 15 37
+37 52 2
+39 0 15
+
+fertilizer-to-water map:
+49 53 8
+0 11 42
+42 0 7
+57 7 4
+
+water-to-light map:
+88 18 7
+18 25 70
+
+light-to-temperature map:
+45 77 23
+81 45 19
+68 64 13
+
+temperature-to-humidity map:
+0 69 1
+1 0 69
+
+humidity-to-location map:
+60 56 37
+56 93 4
+"""
+        let d = Day5(puzzleInput: input).solvePart2()
+        XCTAssertEqual(d, "46")
+    }
+    
+    func testDay6() throws {
+        let input = """
+Time:      7  15   30
+Distance:  9  40  200
+"""
+        let d = Day6(puzzleInput: input).solvePart2()
+        XCTAssertEqual(d, "71503")
     }
 }

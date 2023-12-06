@@ -5,8 +5,6 @@
 //  Created by Lukas Neukom on 04.12.2023.
 //
 
-import Foundation
-
 import AdventOfCodeCore
 
 public class Day4: AOCDay {
@@ -40,7 +38,7 @@ public class Day4: AOCDay {
             var winningNumbers = Set<Int>()
             var points = 0
             var matches = 0
-            var ownCards = scratchcards[cardCount]!
+            let ownCards = scratchcards[cardCount]!
             
             for winner in winning {
                 if winner != "" {
@@ -74,7 +72,7 @@ public class Day4: AOCDay {
             cardCount += 1
         }
         
-        for (number, amount) in scratchcards {
+        for (_, amount) in scratchcards {
             sumOfCards += amount
         }
         

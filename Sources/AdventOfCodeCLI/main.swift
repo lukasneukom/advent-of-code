@@ -8,8 +8,8 @@
 import Foundation
 import AdventOfCode2023
 
-let inputFileURL = Bundle.module.url(forResource: "inputs/2023/input4", withExtension: "")
+let inputFileURL = Bundle.module.url(forResource: "inputs/2023/input6", withExtension: "")
 let rawInput = try String(contentsOf: inputFileURL!).trimmingCharacters(in: .whitespacesAndNewlines)
 
-let d = Day4(puzzleInput: rawInput).solvePart1()
+let d = Day6(puzzleInput: rawInput).solvePart2()
 print(d)
